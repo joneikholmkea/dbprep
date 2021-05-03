@@ -20,7 +20,6 @@ public class MyDB {
                 ps1.setString(1,name);
                 ps1.executeUpdate();
                 String sql = "show databases;";
-//				String sql = "select * from person";
                 PreparedStatement ps = connection.prepareStatement(sql);
                 ResultSet resultSet = ps.executeQuery();
                 while (resultSet.next()) // loop through rows of result set
