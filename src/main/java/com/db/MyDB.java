@@ -25,7 +25,7 @@ public class MyDB {
                 while (resultSet.next()) // loop through rows of result set
                 {
                     String firstColumn=resultSet.getString(1);
-//					String firstColumn2=resultSet.getString(2); //1-index !! not zero indexbased
+                    //	String firstColumn2=resultSet.getString(2); //1-index !! not zero indexbased
                     System.out.println("firstColumn " + firstColumn);
                 }
                 resultSet.close(); // close result set
