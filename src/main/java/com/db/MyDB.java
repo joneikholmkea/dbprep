@@ -22,8 +22,6 @@ public class MyDB {
                 String sql = "show databases;";
 //				String sql = "select * from person";
                 PreparedStatement ps = connection.prepareStatement(sql);
-
-//				statement.executeQuery("select * from person");
                 ResultSet resultSet = ps.executeQuery();
                 while (resultSet.next()) // loop through rows of result set
                 {
